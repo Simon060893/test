@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="UTF-16"/>
+</head>
+<body> 
+<script >
+	function check(input) { 
+    input.value = input.value.replace(/[^\d,]/g, ''); 
+}  
+</script>
+<style>
+body{
+color:black;
+}
+img{
+border:2px solid black;
+} 
+ 
+form input{ 
+width:268px;;
+height:28px;
+border:2px solid black;
+font-weight:18px;
+margin-top:5px;
+}
+form input[type=submit]{
+border:2px solid black;
+border-radius:5px;
+background:gray;
+font-weight:bold;
+width:120px;
+margin-left:163px;
+}
+form input[type=submit]:hover{
+cursor:pointer;
+}
+form label{
+margin-top:10px;
+float:left;
+}
+</style>
+<header> 
+
+</header>
+<main>
+<article>
+<div class="calc"> 
+<div id ="rectangular" ><img src ="../img/triangle.png"/></div> 
+	<form name="triangle" method="POST" action="calculation.php"> 
+	 <label>A:</label><input type="text"  name="first_segment"placeholder="0" onkeyup="return check(this);" onchange="return check(this);" autofocus="true"/> </br>
+	<label>B:</label><input type="text"  name="second_segment"placeholder="0" onkeyup="return check(this);" onchange="return check(this);"/></br>
+	<label>C:</label><input type="text"  name="last_segment"placeholder="0" onkeyup="return check(this);" onchange="return check(this);"/></br>
+	<input type="submit"  name="send" value="Submit"/>
+	</form>   
+<div>
+<script>
+
+</script>
+</article>
+</main>
+<footer></footer>
+</body>
+</html>
